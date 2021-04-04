@@ -14,17 +14,21 @@
 	margin: 0 auto;
 	border-bottom: 1px solid #f2f2f2;
 }
+
 .navbar h1 {
 	color: #f1356d;
 }
+
 .navbar .links {
 	margin-left: auto;
 }
+
 .navbar a {
 	margin-left: 16px;
 	text-decoration: none;
 	padding: 6px;
 }
+
 .navbar a:hover {
 	color: #f1356d;
 }
@@ -33,6 +37,21 @@
 	max-width: 600px;
 	margin: 40px auto;
 	padding: 20px;
+}
+
+.link-buttons {
+	text-decoration: none;
+	background: #68d636;
+	color: #333;
+	border: 0;
+	padding: 6px;
+	border-radius: 8px;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.link-buttons:hover {
+	background: #5bb830;
 }
 
 /* blog previews / list */

@@ -6,6 +6,7 @@ import Home from './components/Home/Home';
 import Create from './components/Create/Create';
 import BlogDetails from './components/BlogDetails/BlogDetails';
 import PageNotFound from './components/PageNotFound/PageNotFound';
+import EditBlog from './components/Edit/Edit';
 
 function App() {
 
@@ -23,6 +24,9 @@ function App() {
             </Route>
             <Route path='/blog/:id'>
               <BlogDetails />
+            </Route>
+            <Route path='/edit/:id'>
+              <EditBlog />
             </Route>
             <Route path='*'>
               <PageNotFound />

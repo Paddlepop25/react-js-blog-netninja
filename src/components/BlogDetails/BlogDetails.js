@@ -1,4 +1,4 @@
-import { useParams, useHistory } from 'react-router-dom';
+import { Link, useParams, useHistory } from 'react-router-dom';
 import useFetch from '../../hooks/useFetch';
 
 const BlogDetails = () => {
@@ -22,8 +22,9 @@ const BlogDetails = () => {
           <h2>{blog.title}</h2>
           <p>Written by: {blog.author}</p>
           <div>{blog.body}</div>
-          <button onClick={() => handleDeleteBlog(blog.id)}>Delete</button>
-         </article>}
+          <Link to={`/edit/${id}`} className="link-buttons">Edit</Link>
+          <button onClick={handleDeleteBlog}>Delete</button>
+        </article>}
 
     </div>
   );
